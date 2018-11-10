@@ -1,0 +1,547 @@
+:root {
+    --primario: #71b100;
+    --secundario: #e08709;
+}
+body {
+    font-family: 'Helvetica';
+    background-color: #f2f2f2;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 300;
+}
+
+h2 {
+    font-weight: 700;
+    color: #000066;    
+    font-size: 2.4em;
+    text-transform: uppercase;
+}
+
+.bg-success {
+    background-color: #000066!important;
+}
+
+@media (max-width: 768px) {
+    .header a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .barra.bg-success {
+        background-color: #000066!important;
+    }
+    .header {
+        position: relative;
+       
+    }
+    .header .barra {
+        position: absolute;
+        z-index: 100;
+        width: 100%;
+    }
+
+    .carousel-item img {
+        height: 900px;
+        width: 100%;            
+    }   
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+        height: 275px;
+        width: 100%;              
+    }   
+}
+
+#slider {
+    background-color: #F5F5DC;   
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white!important;
+}
+
+.navbar-brand span {
+    font-weight: 900;
+}
+ .navbar-dark .navbar-nav .nav-link {
+    /*text-transform: uppercase;*/
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+/* Dropdown */
+.dropdown-menu {
+    background-color: var(--primario);
+    
+}
+
+.dropdown-menu .dropdown-item {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.dropdown-menu .dropdown-item:hover {
+   background-color: var(--secundario);
+}
+
+/** Caption **/
+.carousel-caption h3 {
+    font-size: 2.4rem;
+}
+
+.bloque-info p {
+    font-size: 1.4rem;
+}
+
+.btn-warning {
+    background-color: var(--secundario);
+    color: #ffffff;
+    border-color: var(--secundario);
+    font-weight: 700;
+}
+
+/** Mantra **/
+
+.mantra {
+    
+    padding: 40px 0 80px 0!important;
+    border-bottom: 1px solid deepskyblue;
+    border-top: 1px solid deepskyblue;
+    
+}
+
+.mantra h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000066;
+
+}
+
+.mantra h3 {
+    font-size: 3rem;
+    padding-top: 30px;
+    font-weight: 500;    
+    font-family: 'Snell Roundhand', cursive!important;
+    text-transform: uppercase;
+    color: deepskyblue;
+}
+
+.mantra img {
+    padding-top: 35px;
+}
+
+
+/** Nosotros **/
+.sobre-nosotros.bg-primary {
+    /**background-color: #037bc0!important;**/
+    background-color: #000066!important;
+    min-height: 35rem;
+    text-align: justify;
+}
+.imagen-nosotros {
+    min-height: 35rem;
+    background-image: url(../img/foto2.jpeg);
+}
+
+.imagen-bg {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/** Instructores **/
+
+.instructores {
+    margin-bottom: 50px;   
+}
+
+.instructores h2 {
+    font-weight: 700;
+    color: #000066;    
+    font-size: 2.4em;
+    text-transform: uppercase;
+}
+
+.efecto img {
+  /* filter: gray;
+  -webkit-filter: grayscale(1);*/
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.efecto:hover img {
+  -webkit-filter: grayscale(1);
+  -webkit-transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+
+div.efecto p {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  padding: 15px 10px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 93.5%;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+div.efecto:hover p {
+  bottom: -80px;
+  opacity: 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+    div.efecto p {
+    display: none;
+    
+  }
+
+  div.efecto img {
+      margin-bottom: 50px;
+    
+  }
+
+}
+
+/** Estudiantes **/
+
+@media (min-width: 768px) {
+
+.estudiantes .efecto p {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  padding: 15px 10px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 92%;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+div.efecto:hover p {
+  bottom: -80px;
+  opacity: 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+    div.efecto p {
+    display: none;
+    
+  }
+
+  div.efecto img {
+      margin-bottom: 50px;
+    
+  }
+
+}
+
+
+/** Anuncios **/
+
+.anuncios .card {
+    margin-bottom: 2rem;
+}
+.card-precio {
+    font-size: 1.1rem;
+    color: var(--primario);
+}
+
+.card-descripcion img {
+    margin-right: .5rem;
+}
+
+.encuentra {
+    background-image: url(../img/cover_1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 0px 50px 0px;
+}
+
+.encuentra .row {
+    height: 25rem;
+}
+
+.encuentra h3 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #000066;
+}
+
+.encuentra .btn-warning {
+    background-color: #000066!important;
+    border-color: white;
+}
+
+.encuentra p {
+    font-size: 1.5rem;
+}
+
+/* Blog */
+
+.entrada h3::after {
+    content: '';
+    display: block;
+    width: 8rem;
+    height: .2rem;
+    background-color: var(--primario);
+    margin-top: .5rem;
+}
+
+.meta span {
+    color: var(--secundario);
+}
+
+.btn-success {
+    background-color: var(--primario);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn-success:hover {
+    background-color: #609602;
+}
+
+/** Testimoniales **/
+
+.testimoniales {
+    background-color: var(--primario);
+}
+
+.testimoniales .carousel-item {
+    padding-left: 2rem;
+}
+
+.testimoniales .testimonial-texto {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    font-weight: 300;
+}
+
+.testimoniales .testimonial-texto:before {
+    content: open-quote;
+    font-size: 4rem;
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    font-weight: 900;
+    
+}
+
+.testimoniales span {
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+/** Footer **/
+.footer {
+    background-color: #000066!important;
+}
+
+.footer .nav-link {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.footer .copyright {
+    padding-top: 5px;
+}
+
+/** Projects **/
+
+.bg-prim {
+    background-color: #000066;
+}
+
+.bg-primary {
+    background-image: url(../img/proyectos/Biomat2.jpg);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .2s ease-in-out;
+}
+
+
+.bg-vino {
+  background-image: url(../img/proyectos/Bioprint3.jpg);
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  -webkit-transition: all .2s ease-in-out;
+}
+
+.bg-vino h2 {
+    color: white;
+}
+
+.bg-comida {
+    background-image: url(../img/proyectos/organ2.jpg);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.bg-comida h2 {
+    color: #000066;
+}
+
+.bg-secondary {
+    background-image: url(../img/proyectos/point1.jpg);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.bg-secondary h2 {
+    color: white;
+}
+
+.imagen {
+    background-size: cover;
+    background-position: top center;
+}
+
+.imagen:hover {
+-webkit-filter: grayscale(0);
+}
+
+
+.imagen-superior > div, 
+.imagen-inferior > div {
+    height: 30rem;
+}
+
+@media(min-width: 768px) {
+
+.imagen-superior > div, 
+.imagen-inferior > div {
+    height: 45rem;
+  }
+}
+
+.imagen-inferior .bg-comida {
+    order: 1;
+}
+
+@media(min-width: 768px) {
+    .imagen-inferior .bg-comida {
+    order: unset;
+    }
+}
+
+.imagen-superior .contenido {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.imagen-inferior .contenido {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.contenido p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 2rem;
+}
+
+/** Información Instructor**/
+
+.img-fondo {
+    background-image: url(../img/cover_1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.informacion {
+    padding-top: 100px!important;  
+}
+
+.composicion {
+    margin-top: 20px;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    box-shadow: 2px 2px;
+}
+
+.composicion h1 {
+    color: #1E90FF;
+}
+
+.primero {
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.informacion img {
+    height: 300px;
+    border-radius: 25px;
+}
+
+.texto {
+    padding-top: 20px;
+    text-align: justify;
+    padding: 20px 20px 18px 20px;
+}
+
+.informacion span {
+    font-weight: bold;
+}
+
+/** Información Intern **/
+
+.internh1 {
+    text-align: center;
+}
+
+/** Lab Life **/
+
+.labfirst {
+    padding-top: 100px;
+    text-align: justify;
+    border-bottom: 1px solid black;
+}
+
+.labfirst h1 {
+    text-align: center;
+}
+
+.labRest {
+    padding-top: 50px;
+    text-align: justify;
+    border-bottom: 1px solid black;
+}
+
+/** Projects **/
+
+.proj-text {
+    text-align: justify;
+}
+
+.projectos-texto {
+    font-size: 18px;
+}
